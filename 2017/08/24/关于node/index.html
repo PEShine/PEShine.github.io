@@ -5,16 +5,16 @@
   
   <title> 关于node | 集会所</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="[toc] Homebrew官网: https://brew.sh/index_zh-cn.html  安装 1/usr/bin/ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;  使用搜索: brew search 软件名,如 brew searc">
+  <meta name="description" content="Homebrew官网: https://brew.sh/index_zh-cn.html  安装 1/usr/bin/ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;  使用搜索: brew search 软件名,如 brew search wget">
 <meta property="og:type" content="article">
 <meta property="og:title" content=" 关于node">
 <meta property="og:url" content="http://yoursite.com/2017/08/24/关于node/index.html">
 <meta property="og:site_name" content="集会所">
-<meta property="og:description" content="[toc] Homebrew官网: https://brew.sh/index_zh-cn.html  安装 1/usr/bin/ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;  使用搜索: brew search 软件名,如 brew searc">
-<meta property="og:updated_time" content="2017-08-24T14:04:19.000Z">
+<meta property="og:description" content="Homebrew官网: https://brew.sh/index_zh-cn.html  安装 1/usr/bin/ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;  使用搜索: brew search 软件名,如 brew search wget">
+<meta property="og:updated_time" content="2017-08-24T14:09:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content=" 关于node">
-<meta name="twitter:description" content="[toc] Homebrew官网: https://brew.sh/index_zh-cn.html  安装 1/usr/bin/ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;  使用搜索: brew search 软件名,如 brew searc">
+<meta name="twitter:description" content="Homebrew官网: https://brew.sh/index_zh-cn.html  安装 1/usr/bin/ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;  使用搜索: brew search 软件名,如 brew search wget">
   
     <link rel="alternate" href="/atom.xml" title="集会所" type="application/atom+xml">
   
@@ -52,9 +52,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -85,8 +85,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>[toc]</p>
-<h1 id="Homebrew"><a href="#Homebrew" class="headerlink" title="Homebrew"></a>Homebrew</h1><p>官网: <a href="https://brew.sh/index_zh-cn.html" target="_blank" rel="external">https://brew.sh/index_zh-cn.html</a></p>
+        <h1 id="Homebrew"><a href="#Homebrew" class="headerlink" title="Homebrew"></a>Homebrew</h1><p>官网: <a href="https://brew.sh/index_zh-cn.html" target="_blank" rel="external">https://brew.sh/index_zh-cn.html</a></p>
 <ul>
 <li><p>安装</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</div></pre></td></tr></table></figure>
@@ -105,7 +104,7 @@
 <h1 id="npm-node-package-manager"><a href="#npm-node-package-manager" class="headerlink" title="npm (node package manager)"></a>npm (node package manager)</h1><p>npm 安装 node 的时候会附带安装, 是 nodejs 的包管理器, 用于 node 插件的管理</p>
 <p>由于 npm 服务器在国外,可以用淘宝的镜像</p>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ul>
-<li><p>零时使用</p>
+<li><p>临时使用</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm --registry https://registry.npm.taobao.org install express</div></pre></td></tr></table></figure>
 </li>
 <li><p>持久使用</p>
@@ -125,17 +124,13 @@
 <li>例: <code>npm install gulp-less --save-dev</code></li>
 <li>全局安装: -g, 写入系统环境变量, 在任何地方都能调用</li>
 <li>非全局安装: 本地安装将安装在定位目录的 node_modules 文件夹下, 通过 require() 调用</li>
-<li><code>--save</code> 将保存配置信息至 package.json<ul>
+<li><code>--save</code> 将保存配置信息至 package.json</li>
 <li><code>-dev</code> 保存至 package.json 的 devDependencies 节点，不指定 -dev 将保存至 dependencies 节点；一般保存在  dependencies 的像这些 express/ejs/body-parser 等等。</li>
 <li>为什么要保存至 package.json ？ 因为 node 插件包相对来说非常庞大，所以不加入版本管理，将配置信息写入  package.json 并将其加入版本管理，其他开发者对应下载即可（命令提示符执行npm install，则会根据package.json 下载所有需要的包，npm install –production只下载 dependencies 节点的包）。</li>
 </ul>
-</li>
-</ul>
 <h3 id="npm-卸载"><a href="#npm-卸载" class="headerlink" title="npm 卸载"></a>npm 卸载</h3><ul>
-<li>使用npm卸载插件：<code>npm uninstall &lt;name&gt;[-g] [--save-dev]</code> PS：不要直接删除本地插件包<ul>
+<li>使用npm卸载插件：<code>npm uninstall &lt;name&gt;[-g] [--save-dev]</code> PS：不要直接删除本地插件包</li>
 <li>借助 rimraf: <code>npm install rimraf -g</code> 用法：<code>rimraf node_modules</code></li>
-</ul>
-</li>
 </ul>
 <h3 id="npm-更新插件"><a href="#npm-更新插件" class="headerlink" title="npm 更新插件"></a>npm 更新插件</h3><p><code>npm update &lt;name&gt; [-g] [--save-dev]</code></p>
 <ul>
@@ -153,7 +148,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/08/24/关于node/" data-id="cj6qit8yl00010yni54lq4ile" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/08/24/关于node/" data-id="cj6qiyybv000149niyksxajl0" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -187,7 +182,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
@@ -208,7 +203,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 EShine<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
